@@ -58,7 +58,7 @@ body, html {
   &:before {
     content: "";
     @include images(0, 211px, 339px, 898px, "Gradient-left.png", 0, 0);
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 .right-grad {
@@ -76,7 +76,7 @@ body, html {
     position: absolute;
     top: 90px;
     left: 1000px;
-    width: 250px;
+    width: 243px;
     z-index: 100;
   }
     li {
@@ -87,7 +87,7 @@ body, html {
   &:before {
     content: "";
     @include images(115px, 1003px, 270px, 731px, "Gradient-right.png", 0, 0);
-    opacity: 0.6;
+    opacity: 0.8;
   }
 }
 .center-btm {
