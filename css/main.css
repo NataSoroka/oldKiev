@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.wripper {
+  width: 1480px;
+  height: 1000px;
+  margin: auto;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: -330px -115px;
+  background-color: #291000;
+  position: relative;
+  overflow: hidden; }
+
+.left-grad ul {
+  list-style-image: url("../img/marker.png");
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #f9e0a8;
+  margin-left: 40px;
+  margin-top: 150px;
+  position: absolute;
+  top: 30px;
+  left: 211px;
+  width: 300px;
+  z-index: 100; }
+  .left-grad ul li {
+    padding: 5px;
+    white-space: normal; }
+.left-grad:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 211px;
+  width: 339px;
+  height: 898px;
+  background-image: url("../img/Gradient-left.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.6; }
+
+.right-grad ul {
+  list-style-image: url("../img/marker.png");
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #f9e0a8;
+  margin-left: 40px;
+  margin-top: 150px;
+  position: absolute;
+  top: 90px;
+  left: 1000px;
+  width: 250px;
+  z-index: 100; }
+.right-grad li {
+  padding: 5px;
+  white-space: normal; }
+.right-grad:before {
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: 1003px;
+  width: 270px;
+  height: 731px;
+  background-image: url("../img/Gradient-right.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.6; }
+
+.center-btm {
+  position: absolute;
+  top: 480px;
+  left: 546px;
+  width: 461px;
+  height: 307px;
+  background-image: url("../img/center-btn.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+  .center-btm ul {
+    list-style-image: url("../img/marker.png");
+    margin-left: 50px;
+    margin-top: 30px; }
+    .center-btm ul li {
+      padding: 5px; }
+    .center-btm ul img {
+      position: absolute; }
+    .center-btm ul .text1 {
+      top: 30px;
+      left: 42px; }
+    .center-btm ul .text2 {
+      top: 63px;
+      left: 50px; }
+    .center-btm ul .text3 {
+      top: 96px;
+      left: 43px; }
+    .center-btm ul .text4 {
+      top: 129px;
+      left: 42px; }
+    .center-btm ul .text5 {
+      top: 161px;
+      left: 50px; }
+
+.center-grad {
+  position: absolute;
+  top: 574px;
+  left: 212px;
+  width: 1063px;
+  height: 426px;
+  background-image: url("../img/gradient-center.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.typewriter {
+  position: absolute;
+  top: 660px;
+  left: 255px;
+  width: 950px;
+  height: 380px;
+  background-image: url("../img/typewriter_1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%; }
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 211px;
+  width: 1064px;
+  height: 150px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0; }
+
+.menu-btns {
+  position: absolute;
+  top: 130px;
+  left: 805px; }
+  .menu-btns .top a {
+    display: inline-block; }
+  .menu-btns .bottom a {
+    display: inline-block; }
+  .menu-btns .sound-btn {
+    float: right;
+    cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */

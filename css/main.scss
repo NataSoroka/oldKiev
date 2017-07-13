@@ -1,0 +1,156 @@
+@mixin images($top, $left, $width, $height, $imgName, $posTop, $posLeft) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+  background-image: url("../img/" + $imgName);
+  background-repeat: no-repeat;
+  background-position: $posTop $posLeft;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background-color: #291000;
+}
+.wripper {
+  width: 1480px;
+  height: 1000px;
+  margin: auto;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: -330px -115px;
+  background-color: #291000;
+  position: relative;
+  overflow: hidden;
+}
+.left-grad {
+  ul {
+    list-style-image: url("../img/marker.png");
+    font: {
+      family: Arial, Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+    line-height: 1;
+    color: rgba(249, 224, 168, 1);
+    margin-left: 40px;
+    margin-top: 150px;
+    position: absolute;
+    top: 30px;
+    left: 211px;
+    width: 300px;
+    z-index: 100;
+    li {
+      padding: 5px;
+      white-space: normal;
+    }
+  }
+  &:before {
+    content: "";
+    @include images(0, 211px, 339px, 898px, "Gradient-left.png", 0, 0);
+    opacity: 0.6;
+  }
+}
+.right-grad {
+  ul {
+    list-style-image: url("../img/marker.png");
+    font: {
+      family: Arial, Helvetica, sans-serif;
+      size: 18px;
+      weight: bold;
+    }
+    line-height: 1;
+    color: rgba(249, 224, 168, 1);
+    margin-left: 40px;
+    margin-top: 150px;
+    position: absolute;
+    top: 90px;
+    left: 1000px;
+    width: 250px;
+    z-index: 100;
+  }
+    li {
+      padding: 5px;
+      white-space: normal;
+    }
+
+  &:before {
+    content: "";
+    @include images(115px, 1003px, 270px, 731px, "Gradient-right.png", 0, 0);
+    opacity: 0.6;
+  }
+}
+.center-btm {
+  @include images (480px, 546px, 461px, 307px, "center-btn.png", 0, 0);
+  
+  ul {
+    list-style-image: url("../img/marker.png");
+    margin-left: 50px;
+    margin-top: 30px;
+    li {
+      padding: 5px;
+    }
+    img {
+      position: absolute;
+    }
+    .text1 {
+      top: 30px;
+      left: 42px;
+    }
+    .text2 {
+      top: 63px;
+      left: 50px;
+    }
+    .text3 {
+      top: 96px;
+      left: 43px;
+    }
+    .text4 {
+      top: 129px;
+      left: 42px;
+    }
+    .text5 {
+      top: 161px;
+      left: 50px;
+    }
+  }
+}
+.center-grad {
+  @include images(574px, 212px, 1063px, 426px, "gradient-center.png", 0, 0);
+  }
+.typewriter {
+  @include images(660px, 255px, 950px, 380px, "typewriter_1.png", 100%, 100%);
+}
+.logo {
+  @include images (0, 211px, 1064px, 150px, "logo.png", 0, 0);
+}
+.menu-btns {
+  position: absolute;
+  top: 130px;
+  left: 805px;
+
+  .top {
+    a {
+      display: inline-block;
+    }
+  }
+  .bottom {
+    a {
+      display: inline-block;
+    }
+  }
+  .sound-btn {
+    float: right;
+    cursor: pointer;
+  }
+}
