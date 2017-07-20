@@ -140,13 +140,19 @@ body, html {
   left: 805px;
 
   .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     a {
-      display: inline-block;
+      //display: inline-block;
     }
   }
   .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     a {
-      display: inline-block;
+      //display: inline-block;
     }
   }
   .sound-btn {

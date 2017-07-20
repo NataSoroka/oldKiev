@@ -146,10 +146,14 @@ body, html {
   position: absolute;
   top: 130px;
   left: 805px; }
-  .menu-btns .top a {
-    display: inline-block; }
-  .menu-btns .bottom a {
-    display: inline-block; }
+  .menu-btns .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .menu-btns .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
   .menu-btns .sound-btn {
     float: right;
     cursor: pointer; }
